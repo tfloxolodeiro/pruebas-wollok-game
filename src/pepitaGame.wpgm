@@ -9,13 +9,11 @@ program PepitaGame {
 	game.title("Pepita")
 	game.height(10)
 	game.width(20)
-	game.boardGround("ciudad.png")
-	game.ground("jugador.png")
 	
 
 //	VISUALES
 	game.addVisualIn(alpiste, game.at(5,5))
-	game.addVisualIn(manzana, game.at(5,1))
+	game.addVisualIn(manzana, game.at(19,9))
 	game.addVisual(buenosAires)
 	game.addVisual(villaGesell)
 	game.addVisual(pepita)
