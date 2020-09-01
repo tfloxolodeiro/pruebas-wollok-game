@@ -7,10 +7,9 @@ program PepitaGame {
 	
 //	CONFIG	
 	game.title("Pepita")
-	game.height(10)
+	game.height(20)
 	game.width(20)
-	game.ground("suelo.png")
-	game.boardGround("manzana.png")
+	game.ground("fondoRaro.png")
 
 //	VISUALES
 	game.addVisualIn(alpiste, game.at(5,5))
