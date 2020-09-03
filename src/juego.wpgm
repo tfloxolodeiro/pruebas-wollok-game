@@ -1,0 +1,14 @@
+import wollok.game.*
+import actores.*
+import clasesBase.*
+import constructores.*
+
+
+program game {
+	// Resolucion 700x800 con celdas de 50p
+	game.width(14)
+	game.height(16)
+	game.boardGround("fondo.png")
+	generadorDelMundo.inicializarMundo()
+	game.start()
+}
