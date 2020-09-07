@@ -9,7 +9,6 @@ program game {
 	game.width(14)
 	game.height(16)
 	game.boardGround("fondo.png")
-	game.ground("skull.png")
 	generadorDelMundo.inicializarMundo()
 	game.start()
 }
