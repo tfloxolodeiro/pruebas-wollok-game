@@ -9,7 +9,7 @@ program PepitaGame {
 	game.title("Pepita")
 	game.height(20)
 	game.width(20)
-	game.boardGround("manzana.png")
+	game.boardGround("asdf.png")
 
 //	VISUALES
 	game.addVisualIn(alpiste, game.at(5,5))
