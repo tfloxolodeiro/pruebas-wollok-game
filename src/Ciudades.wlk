@@ -1,7 +1,8 @@
 import wollok.game.*
+import pepita.*
 
 object villaGesell {
-	method image() = "ciudad.png"
+	method image() = pepita.image()
 	method position() = game.at(8,3)
 	
 	method nombre() = "Villa Gesell"
