@@ -1,5 +1,5 @@
 import pepita.*
-import ciudades.*
+import Ciudades.*
 import comidas.*
 import wollok.game.*
 
