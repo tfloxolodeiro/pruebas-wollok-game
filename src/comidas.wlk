@@ -1,8 +1,9 @@
 import Ciudades.*
+import pepita.*
 
 class Comida{
 	var energia
-	method algo() = 243
+	method algo() = pepita.image()
 	method energia() = energia
 }
 

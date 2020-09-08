@@ -1,5 +1,6 @@
 import wollok.game.*
 import Ciudades.*
+import comidas.*
 
 object pepita {
 	var property energia = 100
@@ -9,7 +10,7 @@ object pepita {
 	method image() = "pepita.png"
 
 	method come(comida) {
-		energia = energia + comida.energia()
+		energia = energia + comida.energia() + manzana.energia()
 	}
 	
 	method volaHacia(unaCiudad) {
