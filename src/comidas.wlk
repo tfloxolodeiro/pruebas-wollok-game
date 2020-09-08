@@ -1,3 +1,5 @@
+import Ciudades.*
+
 class Comida{
 	var energia
 	method algo() = 243
@@ -5,7 +7,7 @@ class Comida{
 }
 
 object manzana inherits Comida(energia = 40){
-	method image() = "manzana.png"
+	method image() = buenosAires.image()
 }
 
 object alpiste inherits Comida(energia = 2){
