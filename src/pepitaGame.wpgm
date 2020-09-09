@@ -6,7 +6,7 @@ import wollok.game.*
 program PepitaGame {
 	
 //	CONFIG	
-	game.title("Pepita")
+	game.title("Pépita")
 	game.height(20)
 	game.width(20)
 	game.boardGround("asdf.png")
