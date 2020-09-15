@@ -7,16 +7,15 @@ program PepitaGame {
 	
 //	CONFIG	
 	game.title("Pépita")
-	game.height(20)
-	game.width(20)
-	game.boardGround("asdf.png")
+	game.height(10)
+	game.width(10)
 
 //	VISUALES
-	game.addVisualIn(alpiste, game.at(5,5))
-	game.addVisualIn(manzana, game.at(15,5))
-	game.addVisual(buenosAires)
-	game.addVisual(villaGesell)
-	game.addVisual(pepita)
+	const rana1 = new rana(image = "rana/up.png", position = game.at(1,1))
+	const rana2 = new rana(image = "rana2P/up.png", position = game.at(3,1))
+	
+	game.addVisual(rana1)
+	game.addVisual(rana2)
 
 //	TECLADO
 	keyboard.h().onPressDo { game.say(pepita, pepita.position().toString()) }

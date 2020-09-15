@@ -2,6 +2,15 @@ import wollok.game.*
 import Ciudades.*
 import comidas.*
 
+class rana{
+	const image
+	const position
+	
+	method image() = image
+	
+	method position() = position
+}
+
 object pepita {
 	var property energia = 100
 	var property ciudad = buenosAires 
