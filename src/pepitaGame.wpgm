@@ -18,7 +18,7 @@ program PepitaGame {
 	game.addVisual(rana2)
 
 //	TECLADO
-	keyboard.h().onPressDo { game.say(pepita, pepita.position().toString()) }
+	keyboard.q().onPressDo { game.sound("sonido.mp3").play() }
 
 	keyboard.v().onPressDo { pepita.volaHacia(villaGesell) }
 	keyboard.b().onPressDo { pepita.volaHacia(buenosAires) }
