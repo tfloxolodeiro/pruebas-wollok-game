@@ -19,7 +19,7 @@ object pepita {
 	method image() = "pepita.png"
 
 	method come(comida) {
-		energia = energia + comida.energia() + manzana.energia()
+		energia += comida.energia() + manzana.energia()
 	}
 	
 	method volaHacia(unaCiudad) {
