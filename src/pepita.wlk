@@ -22,6 +22,7 @@ object pepita {
 		energia -= comida.energia() + manzana.energia()
 		energia--
 		energia++
+		return game.at(2,3)
 	}
 	
 	method volaHacia(unaCiudad) {
