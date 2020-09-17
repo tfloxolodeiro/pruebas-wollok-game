@@ -20,6 +20,8 @@ object pepita {
 
 	method come(comida) {
 		energia -= comida.energia() + manzana.energia()
+		energia--
+		energia++
 	}
 	
 	method volaHacia(unaCiudad) {
