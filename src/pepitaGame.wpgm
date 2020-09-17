@@ -12,9 +12,10 @@ program PepitaGame {
 
 //	VISUALES
 	const rana1 = new rana(image = "rana.png", position = game.at(1,1))
-	const rana2 = new rana(image = "rana2P.png", position = game.at(3,1))
+	const rana2 = new rana(image = "rana.png", position = game.at(3,1))
 	var cosa = 2
 	cosa +=2
+	cosa++
 	
 	game.addVisual(rana1)
 	game.addVisual(rana2)
