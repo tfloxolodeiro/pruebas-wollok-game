@@ -11,14 +11,26 @@ program PepitaGame {
 	game.width(10)
 
 //	VISUALES
-	const rana1 = new rana(image = "rana.png", position = game.at(1.53215,3.1415))
-	const rana2 = new rana(image = "rana.png", position = game.at(5.88,1.9))
+	const rana1 = new rana(image = "rana.png", position = game.at(1,3))
+	const rana2 = new rana(image = "rana.png", position = game.at(5,1))
 	game.addVisual(rana1)
 	game.addVisual(rana2)
 //	TECLADO
-	keyboard.q().onPressDo { game.sound("sonido.mp3").play() }
+	const sonidosLoopeados = []
 
-	keyboard.v().onPressDo { pepita.volaHacia(villaGesell) }
+	keyboard.q().onPressDo ({ game.sound("sonido.mp3").play() })
+	keyboard.w().onPressDo ({ 
+		const sonido = game.sound("sonido.mp3")
+		sonido.shouldLoop(true)
+		sonidosLoopeados.add(sonido)
+		sonido.play()
+	})
+
+	keyboard.e().onPressDo {
+		const algunSonido = sonidosLoopeados.anyOne()
+		algunSonido.stop()
+		sonidosLoopeados.remove(algunSonido)
+	}
 	keyboard.b().onPressDo { pepita.volaHacia(buenosAires) }
 
 	keyboard.up().onPressDo { pepita.move(pepita.position().up(1)) }
