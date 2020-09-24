@@ -16,28 +16,23 @@ program PepitaGame {
 	game.addVisual(rana1)
 	game.addVisual(rana2)
 //	TECLADO
-	const sonidosLoopeados = []
-
-	keyboard.q().onPressDo ({ game.sound("sonido.mp3").play() })
-	keyboard.w().onPressDo ({ 
-		const sonido = game.sound("sonido.mp3")
-		sonido.shouldLoop(true)
-		sonidosLoopeados.add(sonido)
-		sonido.play()
-	})
-
-	keyboard.e().onPressDo {
-		const algunSonido = sonidosLoopeados.anyOne()
-		algunSonido.stop()
-		sonidosLoopeados.remove(algunSonido)
-	}
-	keyboard.b().onPressDo { pepita.volaHacia(buenosAires) }
-
-	keyboard.up().onPressDo { pepita.move(pepita.position().up(1)) }
-	keyboard.down().onPressDo { pepita.move(pepita.position().down(1)) }
-	keyboard.left().onPressDo { pepita.move(pepita.position().left(1)) }
-	keyboard.right().onPressDo { pepita.move(pepita.position().right(1)) }
-		
+	const sonido1 = game.sound("varios.mp3")
+	const sonido2 = game.sound("varios.mp3")
+	sonido2.volume(0.5)
+	keyboard.q().onPressDo({sonido1.play()})
+	keyboard.w().onPressDo({sonido1.pause()})
+	keyboard.e().onPressDo({sonido1.resume()})
+	keyboard.r().onPressDo({sonido1.stop()})
+	keyboard.shift().onPressDo({sonido1.shouldLoop(true)})
+	
+	keyboard.a().onPressDo({sonido2.play()})
+	keyboard.s().onPressDo({sonido2.pause()})
+	keyboard.d().onPressDo({sonido2.resume()})
+	keyboard.f().onPressDo({sonido2.stop()})
+	keyboard.control().onPressDo({sonido2.shouldLoop(true)})
+	
+	keyboard.z().onPressDo({game.sound("un.mp3").play()})
+	keyboard.x().onPressDo({game.sound("tucu.mp3").play()})
 //	START
 	game.start()
 }
