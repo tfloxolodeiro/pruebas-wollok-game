@@ -31,6 +31,8 @@ program PepitaGame {
 	keyboard.f().onPressDo({sonido2.stop()})
 	keyboard.control().onPressDo({sonido2.shouldLoop(true)})
 	
+	keyboard.x().onPressDo({throw new Exception(message = "excepcion bonita")})
+	
 	keyboard.z().onPressDo({game.sound("un.mp3").play()})
 	keyboard.x().onPressDo({game.sound("tucu.mp3").play()})
 //	START
