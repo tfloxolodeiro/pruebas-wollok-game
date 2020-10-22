@@ -1,6 +1,3 @@
-import pepita.*
-import Ciudades.*
-import comidas.*
 import wollok.game.*
 
 program PepitaGame {
@@ -10,11 +7,6 @@ program PepitaGame {
 	game.height(10)
 	game.width(10)
 
-//	VISUALES
-	const rana1 = new rana(image = "rana.png", position = game.at(1,3))
-	const rana2 = new rana(image = "rana.png", position = game.at(5,1))
-	game.addVisual(rana1)
-	game.addVisual(rana2)
 //	TECLADO
 	const sonido1 = game.sound("varios.mp3")
 	const sonido2 = game.sound("varios.mp3")
@@ -33,7 +25,6 @@ program PepitaGame {
 	keyboard.enter().onPressDo({game.stop()})
 	keyboard.z().onPressDo({game.sound("un.mp3").play()})
 	keyboard.x().onPressDo({game.sound("tucu.mp3").play()})
-//	START
-	keyboard.enter().onPressDo({game.addVisual(rana1)})
+
 	game.start()
 }

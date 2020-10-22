@@ -1,6 +1,0 @@
-class Sonido {
-	const soundFile
-	
-	
-	
-}
