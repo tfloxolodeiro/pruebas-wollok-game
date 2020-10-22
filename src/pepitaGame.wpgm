@@ -30,7 +30,7 @@ program PepitaGame {
 	keyboard.d().onPressDo({sonido2.resume()})
 	keyboard.f().onPressDo({sonido2.stop()})
 	keyboard.control().onPressDo({sonido2.shouldLoop(true)})
-	
+	keyboard.enter().onPressDo({game.stop()})
 	keyboard.z().onPressDo({game.sound("un.mp3").play()})
 	keyboard.x().onPressDo({game.sound("tucu.mp3").play()})
 //	START
