@@ -8,8 +8,10 @@ program PepitaGame {
 	game.height(10)
 	game.width(10)
 	
-	game.addVisual(rana)
-
+	game.addVisual(new Rana (image = "rana.png", position = game.at(0,0)))
+	game.addVisual(new Rana (image = "rana.jpeg", position = game.at(0,1)))
+	game.addVisual(new Rana (image = "rana.gif", position = game.at(1,0)))
+	
 //	TECLADO
 	const sonido1 = game.sound("varios.mp3")
 	const sonido2 = game.sound("varios.mp3")
