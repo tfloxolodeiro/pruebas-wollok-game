@@ -1,4 +1,5 @@
 import wollok.game.*
+import rana.*
 
 program PepitaGame {
 	
@@ -6,6 +7,8 @@ program PepitaGame {
 	game.title("Pépita")
 	game.height(10)
 	game.width(10)
+	
+	game.addVisual(rana)
 
 //	TECLADO
 	const sonido1 = game.sound("varios.mp3")
