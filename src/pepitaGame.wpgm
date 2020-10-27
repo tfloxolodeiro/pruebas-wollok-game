@@ -9,7 +9,7 @@ program PepitaGame {
 	game.width(10)
 	
 	game.addVisual(new Rana (image = "rana.png", position = game.at(0,0)))
-	game.addVisual(new Rana (image = "rana.jpeg", position = game.at(0,1)))
+	game.addVisual(new Rana (image = "rana.jpg", position = game.at(0,1)))
 	game.addVisual(new Rana (image = "rana.gif", position = game.at(1,0)))
 	
 //	TECLADO
