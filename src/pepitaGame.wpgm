@@ -7,11 +7,10 @@ program PepitaGame {
 	game.title("Pépita")
 	game.height(10)
 	game.width(10)
-	
-	game.addVisual(new Rana (image = "rana.png", position = game.at(0,0)))
+	const ranaCopada = new Rana (image = "rana.png", position = game.at(0,0))
+	game.addVisual(ranaCopada)
 	game.addVisual(new Rana (image = "rana.jpg", position = game.at(0,1)))
 	game.addVisual(new Rana (image = "rana.gif", position = game.at(1,0)))
-	
 //	TECLADO
 	const sonido1 = game.sound("varios.mp3")
 	const sonido2 = game.sound("varios.mp3")
@@ -31,5 +30,11 @@ program PepitaGame {
 	keyboard.z().onPressDo({game.sound("un.wav").play()})
 	keyboard.x().onPressDo({game.sound("tucu.ogg").play()})
 
+	keyboard.p().onPressDo({ranaCopada.error("oops")})
+
+	game.schedule(0,{game.say(ranaCopada,"hola")})
+
 	game.start()
+	
+	
 }
