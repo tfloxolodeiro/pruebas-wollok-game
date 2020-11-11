@@ -31,9 +31,12 @@ program PepitaGame {
 	keyboard.x().onPressDo({game.sound("tucu.ogg").play()})
 
 	keyboard.p().onPressDo({ranaCopada.error("oops")})
-
-	game.schedule(0,{game.say(ranaCopada,"hola")})
-
+	
+	keyboard.num1().onPressDo({game.say(ranaCopada,"a")})
+	keyboard.num2().onPressDo({game.say(ranaCopada,"Hola")})
+	keyboard.num3().onPressDo({game.say(ranaCopada,"Hola soy la rana copada")})
+	keyboard.num4().onPressDo({game.say(ranaCopada,"Hola soy la rana copada Hola soy la rana copada ")})
+	keyboard.num5().onPressDo({game.say(ranaCopada,"Hola soy la rana copada Hola soy la rana copada Hola soy la rana copada Hola soy la rana copada ")})
 	game.start()
 	
 	
