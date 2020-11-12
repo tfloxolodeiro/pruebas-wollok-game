@@ -7,7 +7,7 @@ program PepitaGame {
 	game.title("Pépita")
 	game.height(10)
 	game.width(10)
-	const ranaCopada = new Rana (image = "rana.png", position = game.at(0,0))
+	const ranaCopada = new Rana (image = "rana.png", position = game.center())
 	game.addVisual(ranaCopada)
 	game.addVisual(new Rana (image = "rana.jpg", position = game.at(0,1)))
 	game.addVisual(new Rana (image = "rana.gif", position = game.at(1,0)))
