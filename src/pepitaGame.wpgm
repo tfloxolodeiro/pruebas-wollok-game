@@ -8,7 +8,7 @@ program PepitaGame {
 	game.height(10)
 	game.width(10)
 	const ranaCopada = new Rana (image = "rana.png", position = game.center())
-	game.addVisual(ranaCopada)
+	game.addVisualCharacter(ranaCopada)
 	game.addVisual(new Rana (image = "rana.jpg", position = game.at(0,1)))
 	game.addVisual(new Rana (image = "rana.gif", position = game.at(1,0)))
 //	TECLADO
@@ -35,8 +35,9 @@ program PepitaGame {
 	keyboard.num1().onPressDo({game.say(ranaCopada,"a")})
 	keyboard.num2().onPressDo({game.say(ranaCopada,"Hola")})
 	keyboard.num3().onPressDo({game.say(ranaCopada,"Hola soy la rana copada")})
-	keyboard.num4().onPressDo({game.say(ranaCopada,"Hola soy la rana copada Hola soy la rana copada ")})
-	keyboard.num5().onPressDo({game.say(ranaCopada,"Hola soy la rana copada Hola soy la rana copada Hola soy la rana copada Hola soy la rana copada ")})
+	keyboard.num4().onPressDo({game.say(ranaCopada,"Hola soy la rana copada Hola soy la rana copada")})
+	keyboard.num5().onPressDo({game.say(ranaCopada,"Hola soy la rana copada Hola soy la rana copada Hola soy la rana copada Hola soy la rana copada")})
+	keyboard.num5().onPressDo({game.say(ranaCopada,"Hola soy la rana copada Hola soy la rana copada Hola soy la rana copada Hola soy la rana copada Hola soy la rana copada Hola soy la rana copada Hola soy la rana copada Hola soy la rana copada Hola soy la rana copada Hola soy la rana copada")})
 	game.start()
 	
 	
