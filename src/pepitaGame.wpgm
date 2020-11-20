@@ -29,8 +29,8 @@ program PepitaGame {
 	keyboard.enter().onPressDo({game.stop()})
 	keyboard.z().onPressDo({game.sound("un.wav").play()})
 	keyboard.x().onPressDo({game.sound("tucu.ogg").play()})
-
 	keyboard.p().onPressDo({ranaCopada.error("oops")})
+	keyboard.o().onPressDo({1/0})
 	
 	keyboard.num1().onPressDo({game.say(ranaCopada,"a")})
 	keyboard.num2().onPressDo({game.say(ranaCopada,"Hola")})
